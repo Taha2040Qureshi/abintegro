@@ -271,82 +271,92 @@ ul#css3menu1 li a {
 .ab ul.main-nav.nav.navbar-nav.navbar-right li:hover { background-color: #0E2638; }
 .ab ul.main-nav, .ab ul.main-nav ul { background-color: #888888 !important; }
 .ab .navbar-default .navbar-toggle { border-color: #00A8E5; border-radius: inherit; }
-.ab .navbar-default .navbar-toggle .icon-bar { background-color: #
+/*.ab .navbar-default .navbar-toggle .icon-bar { background-color: #eee}*/
 element.style {
 }
-@media (min-width: 960px)
-ResponsiveStyle…2No9k5zf8811:1
+@media (min-width: 960px){
+/*ResponsiveStyle…2No9k5zf8811:1*/
 #sidebar #top-navbar .main-nav {
     position: relative;
     z-index: 1001;
 }
-@media (min-width: 960px)
-cs3.css:1
+}
+@media (min-width: 960px){
+/*cs3.css:1*/
 #sidebar #top-navbar .main-nav {
     position: relative;
     z-index: 1001;
 }
-ResponsiveStyle…2No9k5zf8811:1
+/*ResponsiveStyle…2No9k5zf8811:1*/
 .ab #top-navbar-container *, .ab #top-navbar-container *:before, .ab #top-navbar-container *:after {
     -webkit-box-sizing: border-box!important;
     -moz-box-sizing: border-box!important;
     box-sizing: border-box!important;
 }
-cs3.css:1
+/*cs3.css:1*/
 .ab #top-navbar-container *, .ab #top-navbar-container *:before, .ab #top-navbar-container *:after {
     -webkit-box-sizing: border-box!important;
     -moz-box-sizing: border-box!important;
     box-sizing: border-box!important;
 }
-@media (min-width: 960px)
-ResponsiveStyle…2No9k5zf8811:1
+}
+@media (min-width: 960px){
+/*ResponsiveStyle…2No9k5zf8811:1*/
 .ab ul.main-nav.nav.navbar-nav.navbar-right>li, .ab ul.main-nav.nav.navbar-nav.navbar-right>li.dropdown.open>a, .ab ul.main-nav.nav.navbar-nav.navbar-right, a.dropdown-toggle:focus, .ab .navbar-default .navbar-nav>li>a:hover, .ab .navbar-default .navbar-nav>li>a:focus {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
-@media (min-width: 960px)
-ResponsiveStyle…2No9k5zf8811:1
+}
+@media (min-width: 960px){
+/*ResponsiveStyle…2No9k5zf8811:1*/
 .ab ul.main-nav.nav.navbar-nav.navbar-right {
     clear: both;
     height: 37px;
     margin-top: 31px;
 }
-@media (min-width: 960px)
-cs3.css:1
+}
+@media (min-width: 960px){
+/*cs3.css:1*/
 .ab ul.main-nav.nav.navbar-nav.navbar-right>li, .ab ul.main-nav.nav.navbar-nav.navbar-right>li.dropdown.open>a, .ab ul.main-nav.nav.navbar-nav.navbar-right, a.dropdown-toggle:focus, .ab .navbar-default .navbar-nav>li>a:hover, .ab .navbar-default .navbar-nav>li>a:focus {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
-@media (min-width: 960px)
-cs3.css:1
+}
+@media (min-width: 960px){
+/*cs3.css:1*/
 .ab ul.main-nav.nav.navbar-nav.navbar-right {
     clear: both;
     height: 37px;
     margin-top: 31px;
 }
-@media (min-width: 960px)
-ResponsiveStyle…2No9k5zf8811:1
+}
+@media (min-width: 960px){
+/*ResponsiveStyle…2No9k5zf8811:1*/
 .main-nav.nav.navbar-nav.navbar-right {
     margin-left: -20px;
 }
-@media (min-width: 960px)
-cs3.css:1
+}
+@media (min-width: 960px){
+/*cs3.css:1*/
 .main-nav.nav.navbar-nav.navbar-right {
     margin-left: -20px;
 }
-CssGenerator.as…onsiveMenu:272
+/*CssGenerator.as…onsiveMenu:272*/
 .ab ul.main-nav, .ab ul.main-nav ul {
     background-color: #888888;
 }
-cs4.css:272
+/*cs4.css:272*/
 .ab ul.main-nav, .ab ul.main-nav ul {
-￼    background-color: #00A8E5;
-}FFFFFF; }
+/*￼*/
+    background-color: #00A8E5;
+}
+}
 .ab .navbar-default .row-offcanvas .navbar-toggle { background-color: #00A8E5 }
 .ab .navbar-default .row-offcanvas .navbar-toggle:hover { background-color: #0E2638 }
 .ab .navbar-default .navbar-nav > .open > a, .ab .navbar-default .navbar-nav > .open > a:hover, .ab .navbar-default .navbar-nav > .open > a:focus { background-color:#0E2638; }
+
 @media (max-width: 959px) {
 .ab ul.settings, .ab .settings.nav .open .dropdown-menu, .ab .navbar-collapse { background-color: #00A8E5; }
 .ab ul.settings.nav.navbar-nav.navbar-right li:hover { background-color: #0E2638; }
@@ -377,6 +387,6 @@ cs4.css:272
 .tablet-landscape  .ab .navbar-collapse, .ab ul.main-nav, .ab ul.main-nav ul, .ab ul.main-nav li, .ab ul.settings, .ab ul.settings ul, .ab ul.settings li, .ab ul.help, .ab ul.help ul, .ab ul.help li, .ab ul.logout-mobile, .ab ul.logout-mobile ul, .ab ul.logout-mobile li { background-color: #00A8E5; }
 }
 .ab ul.settings, .ab ul.settings ul, .ab ul.settings li { background-color: transparent !important; }
-.ab #jobswrapper #recentjobs li:hover { background-color: #0E2638;}  }
+.ab #jobswrapper #recentjobs li:hover { background-color: #0E2638;}
 .ab #jobswrapper #recentjobs li:hover a div.text, .ab #jobswrapper #recentjobs li:hover .jobLink {color: #FFFFFF;}
 .ab .dashboard-panels > .section.title.panel3, .ab #jobs-widget-container > .section.title.panel1 {background-color:#0E2638}
