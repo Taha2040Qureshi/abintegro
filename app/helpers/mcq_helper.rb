@@ -1,0 +1,2 @@
+module McqHelper
+end

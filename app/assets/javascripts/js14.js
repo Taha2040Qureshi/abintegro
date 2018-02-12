@@ -1,0 +1,1 @@
+function Module_MarkComplete(n,t){$(n).is(":checked")?$.ajax({url:"/ModuleManager/ModuleManager.aspx?Module="+t+"&MarkComplete=true",dataType:"",cache:!1}):$.ajax({url:"/ModuleManager/ModuleManager.aspx?Module="+t+"&MarkComplete=false",dataType:"",cache:!1})}

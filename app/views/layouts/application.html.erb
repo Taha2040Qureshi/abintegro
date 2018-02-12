@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Abintegro</title>
+    <%= csrf_meta_tags %>
+    <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href="https://www.abintegro.com/Css/Bootstrap_v3_3?v=TKJIz6WLvRoVgWcHi22DTUkCsS1laWIonSOhbXwg_D41" rel="stylesheet"/>
+<link href="https://www.abintegro.com/Css/FaceBox?v=Sj_eIs4ADdvCsXiFEWfSAbGxSgoeVd_FNleRDamOyeI1" rel="stylesheet"/>
+<link href="https://www.abintegro.com/Css/ResponsiveStyles?v=me3RvrGBf13tjAggJ6sUpKzAM-VH9GtMi2No9k5zf8811" rel="stylesheet"/>
+<link href="https://www.abintegro.com/CSS/Themes/CssGenerator.ashx?ThemeId=2931&Type=ResponsiveMenu" rel="stylesheet"/>
+<link href="https://www.abintegro.com/Css/FontAwesome?v=ZMxgJuUM92aQs7EdvErS5yvsC8BkWSo9_Cpw84uPbFo1" rel="stylesheet"/>
+<link href="https://www.abintegro.com/Css/Fancybox2?v=5qI19Hn_BULXRWTHKX57oNmaCTrfHpbLVgtW2gUsvtk1" rel="stylesheet"/>
+<link href="https://www.abintegro.com/Css/jQueryUI_v1_10_4?v=gjh185Y_eX3aZq2ZPnEEi-0NeohNr5HLao1rfU3-MBI1" rel="stylesheet"/>
+<link href="https://www.abintegro.com/CSS/MainMenu/AbintegroCareerManagement.css" rel="stylesheet"/>
+<link href="https://www.abintegro.com/Css/OwlCarousel
+" rel="stylesheet"/>
+<script language="javascript" type="text/javascript">
+function Upgrade_Click()
+{
+    $(document).bind('close.facebox', function() { 
+        $("#splashVideo").remove();
+    });
+    $.facebox(function() {
+        $.post("/Video",{videoURL:'/Images/Flash/Upgrade.flv'}, function(data) {
+          $.facebox(data);   
+        })
+    })
+}
+
+function ToggleDisplay(oCaller, sID)
+{
+    var oDiv = $("div[id$='" + sID + "']");
+    if(oDiv.css("display") == "none" || oDiv.css("display") == "")
+        oDiv.css({ display: "inline" });
+    else
+        oDiv.css({ display: "none" });
+}
+</script>
+    <script type="text/javascript">
+        setInterval(function () {
+            if ($('.row-offcanvas-left').hasClass('active')) {
+                $('body, html').removeAttr('style');
+                $('body, html').attr('style', 'margin:0px !important; padding-bottom:-70px !important;height:100% !important; max-height:100% !important; border:0px !important; overflow:hidden!important;');
+            }
+            else {
+                $('body, html').removeAttr('style');
+            }
+        }, 100);
+    </script>
+
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+		<style type="text/css">
+			.fancybox-wrap { 
+				z-index: 100001;
+			}
+			
+			.fancybox-overlay {
+				z-index: 100000;
+			}
+			
+			.fancybox-inner {
+				overflow: auto !important
+			}
+		</style>	
+	
+		
+			<script type="text/javascript">
+                
+			    jQuery('body').append('<a class="AlternativeSupport" href="#helpSupportEmail" ><img  width="35" height="73" border="0"  alt="Help" src="/Images/help_right_en.png" style="position: relative; right: -4px;" ></a>');
+                
+			</script>
+			<style type="text/css">
+				.AlternativeSupport {
+					border: medium none;
+					border-collapse: collapse;
+					border-spacing: 0;
+					cursor: pointer;
+					display: block;
+					font-size: 0;
+					line-height: 0;
+					margin: 0;
+					outline: medium none;
+					overflow: hidden;
+					padding: 0;
+					position: fixed;
+					right: -4px;
+					top: 40%;
+					z-index: 99999;
+				}
+				
+                .AlternativeSupport:hover{
+                    right: 0;
+                }
+			
+				@media (min-width: 960px) {
+					.tablet-landscape .AlternativeSupport {
+						display: none;
+					}
+					
+					.tablet-landscape .ab ul.help.nav {
+						display: block !important;
+					}						
+                    
+                    #divFooter {
+                        margin-top: 30px;
+                    }					
+				}
+			
+				@media (max-width: 959px){
+					.AlternativeSupport {
+						display: none;
+					}
+					
+					.ab ul.help.nav {
+						display: block !important;
+					}					
+                    
+                    #divFooter {
+                        padding-left: 0.4cm;
+                        margin-top: 30px;
+                    }
+				}
+			</style>
+            <script type="text/javascript">
+                jQuery(document).ready(function () {
+					 $(".AlternativeSupport, .ab ul.help.nav li a").fancybox({
+						openEffect  : 'none',
+						closeEffect : 'none',
+						margin: [65, 20, 55, 20],
+						helpers: {
+							overlay: {
+								speedIn: 0,
+								speedOut: 0,
+								opacity: 1,
+                                locked: false
+							}
+						}						  							
+					});					
+                });
+            </script>		
+
+		
+<!--***************** END OF COOKIE CONSENT ***************-->        			
+
+        <!--***************** FORCE EMAIL/PASSWORD CHANGE **********************-->
+        
+      
+
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ToolKitScriptManager', 'aspnetForm', ['tctl00$BottomNavigation$updPnlSearchVideos','','tctl00$BottomNavigation$updPnlSearchTutorials','','tctl00$BottomNavigation$updPnlMyBookmarks','','tctl00$BottomNavigation$UpdatePanel2','','tctl00$BottomNavigation$UpdatePanel1','','tctl00$BottomNavigation$updPnlBookmarkPage',''], [], [], 90, 'ctl00');
+//]]>
+</script>
+		
+		
+        
+
+        
+
+        <div class="ab">
+            <!-- Top Navigation BEGIN -->
+            
+<script>
+    $(document).ready(function () {
+        var ismobileortablet = MobileHandler.IsMobileOrTabletEnvironment();
+
+        $(window).resize(function () {
+            ismobileortablet = MobileHandler.IsMobileOrTabletEnvironment();
+
+            if (!ismobileortablet) {
+                $('ul.dropdown-menu li.mobilelink').hide();
+            }
+            else
+                $('ul.dropdown-menu li.mobilelink').show();
+        });
+
+        if (!ismobileortablet) {
+            $('ul.dropdown-menu li.mobilelink').hide();
+        }
+        else
+            $('ul.dropdown-menu li.mobilelink').show();
+
+
+        $('body').on('hover', 'ul.main-nav .dropdown.withlink a', function () {
+            if (!ismobileortablet) {
+                $(this).removeAttr("data-toggle");
+                $(this).attr("data-hover","dropdown");
+            }
+            else {
+                $(this).removeAttr("data-hover");
+                $(this).attr("data-toggle", "dropdown");
+            }
+        });
+
+    });
+</script>
+
+<nav id="top-navbar-container" class="navbar navbar-default navbar-fixed-top theme color">
+    <div class="container">
+        <div class="row row-offcanvas row-offcanvas-left">
+            <div class="col-xs-12 col-sm-12 logo-container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="offcanvas" data-target="#top-navbar" aria-expanded="false" aria-controls="top-navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/Members">
+                        <img src="/Images/Themes/Logos/LogoAbintegroGatewayWhite0.png" id="ctl00_TopNavigation_imgThemeLogo" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-12 sidebar-offcanvas" id="sidebar">
+                <div id="top-navbar" class="navbar-collapse">
+                    <ul class="settings nav navbar-nav navbar-right">
+                        
+                        <li id="ctl00_TopNavigation_SettingsMobileContainer" class="dropdown">
+                            <a href="#" target="_self" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" title="Settings">Settings&nbsp;<span class="glyphicon glyphicon-cog"></span></a>
+
+                            <ul class="dropdown-menu" role="menu">
+                                
+                                <li><a href="/Member/Profile" title="My Profile" style="color: black;">My Profile</a></li><li class="logout-desktop"><a href="/Login.aspx?Logout=true" title="Logout"  style="color: black;">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="main-nav nav navbar-nav navbar-right">
+                        <li><a href="/members" target="_self" title="MY DASHBOARD">MY DASHBOARD</a></li>
+
+                        	  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="who-we-are.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					 DISCOVER 
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					 <ul>
+					
+<li><a href="#" title="Appreciate how well you deal with challenging situations" target="_self">Personal Resilience Assessment<span class="dropdown-menu-icon icon-thumbs-up"></span><p>Appreciate how well you deal with challenging situations</p></a></li>
+
+					
+					</ul>
+					</div>
+				  </li>
+				    <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="who-we-are.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					 Tools
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					 <ul>
+					
+<li><a href="/Quick-CV" title="Prepare your internal CV and keep it updated" target="_self">CV Builder<span class="dropdown-menu-icon icon-file-text"></span><p>Prepare your internal CV and keep it updated</p></a></li>
+					<li><a href="/CoverLetterBuilder" title="Create a cover letter quickly and easily" target="_self">Cover Letter Builder<span class="dropdown-menu-icon icon-envelope"></span><p>Create a cover letter quickly and easily</p></a></li>
+					<li><a href="/resources/documentmanager/Default.aspx" title="Store your CVs, cover letters and other essential documents" target="_self">My Documents<span class="dropdown-menu-icon icon-folder-close"></span><p>Store your CVs, cover letters and other essential documents</p></a></li>
+
+					<li><a href="/resources/documentmanager/Default.aspx" title="Store your CVs, cover letters and other essential documents" target="_self">Video HUb<span class="dropdown-menu-icon icon-folder-close"></span><p>Store your video, </p></a></li>
+
+					<li><a href="/resources/documentmanager/Default.aspx" title="Store your CVs, cover letters and other essential documents" target="_self">Event Booking<span class="dropdown-menu-icon icon-folder-close"></span><p>Store your Event, </p></a></li>
+					</ul>
+					</div>
+				  </li>
+
+				      <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="who-we-are.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					 JOb Search
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					 <ul>
+					
+<li><a href="/Quick-CV" title="Prepare your internal CV and keep it updated" target="_self"> JOb search Engine<span class="dropdown-menu-icon icon-file-text"></span><p>Job Finder</p></a></li>
+					<li><a href="/CoverLetterBuilder" title="Create a cover letter quickly and easily" target="_self">Industry Report<span class="dropdown-menu-icon icon-envelope"></span><p>Enter Report</p></a></li>
+					<li><a href="/resources/documentmanager/Default.aspx" title="Store your CVs, cover letters and other essential documents" target="_self">Linked In Network<span class="dropdown-menu-icon icon-folder-close"></span><p>Enter INfo Linked In</p></a></li>
+
+					<li><a href="/resources/documentmanager/Default.aspx" title="Store your CVs, cover letters and other essential documents" target="_self">GLobal Recuiter Data Base<span class="dropdown-menu-icon icon-folder-close"></span><p>Recutier  </p></a></li>
+
+					</ul>
+					</div>
+				  </li>
+                        	
+                   
+                    </ul>
+					<ul class="help nav navbar-nav navbar-right" style="display:none">
+						<li>
+							<a href="#helpSupportEmail">Help</a>
+						</li>
+					</ul>					
+					<ul class="logout-mobile nav navbar-nav navbar-right" style="display:none">
+						<li>
+							<a href="/Login.aspx?Logout=true" id="ctl00_TopNavigation_lnkLogoutUrl" title="Logout">Logout</a>
+						</li>
+					</ul>					
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<a id="navbar-overlay">&nbsp;</a>
+            <!-- Top Navigation END -->
+
+            <!-- Main Content BEGIN -->
+            <div class="main-content container main-holder-wrapper" >
+                <div class="row main-holder-wrapper-row">
+                    <div  class="col-xs-12 col-sm-12 main-holder-wrapper-col">
+                        
+
+<style>.style1 { FONT-WEIGHT: bold; }</style>
+
+
+
+
+
+
+
+
+
+<span class="welcome-video">
+    <a href="javascript:void(0)" id="lnkWelcomeVideo"></a>
+</span>
+
+<script type="text/javascript">
+    function OpenHelpVideo() {
+        $('#lnkWelcomeVideo').click();
+    }   
+</script>
+
+<div id="ctl00_cphMainContent_ctl00_ucWelcomeVideo_divWelcomeVideo" style="display:none;">
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var videoid = 4160905787001;
+            
+
+            $('#lnkWelcomeVideo').fancybox({
+                'width': 480,
+                'height': 270,
+                'autoScale': false,
+                'transitionIn': 'elastic',
+                'transitionOut': 'elastic',
+                'speedIn': 600,
+                'speedOut': 200,
+                'overlayShow': true,
+                'type': 'iframe',
+                'href': '/Resources/VideoHub/LoadVideo3Responsive.aspx?id=&videoId=' + videoid +'&scriptPath=Skmvl7tfz&ratio=56.25'
+            });
+        });
+    </script>
+</div>
+
+
+    <%= yield %>
+<footer style="background-color: #c4aead !important; width:100%;">
+<div class="copy-rights-section">
+    <div class="container-fluid" style="width: 100%;">
+      <div class="row">
+	     <p>© 2018 JOHN BISTAND - All rights reserved</p>
+	  </div>
+	</div>
+  </div>
+</footer>
+</div>              
+            <!-- Main Content END -->
+
+            <!-- Bottom Navigation BEGIN -->
+            
+
+ 
+
+    <script type="text/javascript">
+		MobileHandler.Init(960, 'tablet-landscape');
+	
+        $(document).ready(function () {
+			// call initialise
+			media_query_plugin.initialise(MobileHandler.IsMobileOrTabletEnvironment, MobileHandler.IsTabletLandscape);			
+
+		    var $mobileAppNotificationBarLink = $(".mobile-app-notification-bar-link");
+		    var $dismissButton = $mobileAppNotificationBarLink.find(".dismiss-btn");
+
+		    if (!MobileHandler.IsMobileOrTabletEnvironment()) {
+		        $dismissButton.hover(function () {
+		            $(this).prev(".btn").toggleClass("no-hover");
+		        });
+		    }
+
+		    $dismissButton.on('click', function (e) {
+		        e.preventDefault();
+		        $mobileAppNotificationBarLink.remove();
+		        $('body').removeClass("has-mobile-app-notification-bar");
+		        $.ajax({
+		            url: "/Resources/Security/AbintegroWebService.asmx/DismissMobileAppNotificationBar",
+		            method: "POST",
+		            cache: false,
+		            contentType: "application/json; charset=utf-8",
+		            data: "{}",
+		        });
+		    });
+        });
+    </script>
+    <!-- Favicon support BEGIN -->
+ 
+    <script type="text/javascript">
+        $((function () {
+            // init favicon support.
+            var domain = "";
+            favIcon.init(domain);
+        })());
+    </script>
+
+
+    <script src="https://www.abintegro.com/js/favicon-support.js"></script>
+<script src="https://www.abintegro.com/jscript/MainMaster?v=KsKTGBcgVTO5y3yMbBKbuH20HmQZvRRGNUO0G0hxV_s1"></script>
+<script src="https://www.abintegro.com/jscript/MobileHandler?v=GDS1IcE8Usy7vHeTl0vLzgWy7TIRfPx67r-_AMsgY541"></script>
+<script src="https://www.abintegro.com/jscript/GoogleAnalytics?v=B4bHMa_YP6yGM13RcaTxaayOg1Dh1iZK4bqjf_c5se41"></script>
+<script src="https://www.abintegro.com/jscript/Bootstrap_3_3?v=vD6HbRGIOA_NhLiw9IZLvVZPJCE94YG6UPnQVBSn3I81"></script>
+<script src="https://www.abintegro.com/Resources/DocumentManager/js/jquery.placeholder.min.js"></script>
+<script src="https://www.abintegro.com/ScriptResource.axd?d=q3U4NHFB0jCP01tz-vJl2KbdLqvEqptfjUh60ohnMOrBjtg0M4mjl4nxSWjl7AqEEZxiroUOZnxsMDKJOoQmuXMTyJoYMowH0KED-tlRJQuIk8bHogLjfa563uyQXGNIo1bLpm4A9oVi4Jj5yu3D0g2&t=ffffffffec54f2d7"></script>
+<script src="https://www.abintegro.com/ScriptResource.axd?d=6BgkrV-ISkENPL2b27lioMDuHY51nSSJyS8Z-OGjUdfKnOLR5bqKUYXwQuoDc9ch1I97p1RZE9xbZOm80d_3CRwVI0MgfouEMjPaKYTazFeeYO2t-0RYpkOxARIyhXajrDY9qFzRdVlZli1t_xK8Pw2&t=ffffffffec54f2d7"></script>
+<script src="https://www.abintegro.com/jscript/Mustache?v=bzyzoY5KXAGXEuGTUEYUEC8M6EqNoQ_BwN1RZVyi1a81"></script>
+<script src="https://www.abintegro.com/jscript/KenBurns?v=BCmJRK5XjkItWo75DeVML0fRtLcSuzSP_bNi1zMb6W01"></script>
+<script src="https://www.abintegro.com/jscript/OwlCarousel?v=KRCmtPC2wSASuMU9rIbhT3cUuMCx_8wfW9clZC_eA4Q1"></script>
+<script src="https://www.abintegro.com/WebResource.axd?d=WWCkfUfoEqJ2KY_jp33iPTvTzQSgnUOmpqn-YsJl9ABkaNlEhaNyptsjhVeE9WchFlTRLst_yoZq0tKxPl5qoEvKhKUipgh0sAaZNutY5UA1&t=636427056960000000"></script>
+<script src="https://www.abintegro.com/jscript/ModuleManagerSetup?v=6Muv3b8WvggmVq4Mm0cGWzJbq6trlIqohgvfCnKmK0A1"></script>
+<script src="https://www.abintegro.com/jscript/jQueryMigrate_v1_2_1?v=j31sfFtBt-7fsm9fEco4tWwFrmMsyEocgMaQEok1n2k1"></script>
+<script src="https://www.abintegro.com/jscript/Fancybox2?v=V_vXG09eB2ddTdkI4RhT-DdhOYEesirzIJxkdSDBW3U1"></script>
+<script src="https://sadmin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script src="https://www.abintegro.com/jscript/FaceBox?v=b1XBzhM8G5cDoF6R-9ucWN79F8YeXy1GqoUYDi9Svnk1"></script>
+<script src="https://www.abintegro.com/jscript/jQuery_v1_11_0?v=lAWanvxuK91VI6uSCdWzhvtofm0aK0rptSpK6X6X2d01"></script>
+<script src="https://www.abintegro.com/jscript/jQuery_v1_11_0?v=lAWanvxuK91VI6uSCdWzhvtofm0aK0rptSpK6X6X2d01"></script>
+  </body>
+</html>

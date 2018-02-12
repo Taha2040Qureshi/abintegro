@@ -1,0 +1,8 @@
+
+.toolbar-container  .toolbar-links  .first { display:none; }
+
+.toolbar-container  .toolbar-links  #ctl00_liShowTutorials { display:none; }
+
+.color{
+   border-top: #fd003a 7px solid !important;
+   background-color: #c4aead !important;}
